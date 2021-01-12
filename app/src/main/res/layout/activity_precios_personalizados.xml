@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Precios_personalizados">
+
+    <TextView
+        android:id="@+id/Tv_Precios_personalizados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#78D2DD"
+        android:gravity="center"
+        android:text="Precios     personalizados"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nombre a imprimir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Precios_personalizados" />
+
+    <EditText
+        android:id="@+id/EDT_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Tu texto"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Unidades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDT_nombre" />
+
+    <Button
+        android:id="@+id/B_Modificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="@+id/EDT_unidades"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="funcion_modificar"
+        app:layout_constraintTop_toTopOf="@+id/EDT_unidades" />
+
+    <EditText
+        android:id="@+id/EDT_unidades"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Unidades"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/B_Modificar"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/B_Play5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play 5"
+        app:layout_constraintBottom_toBottomOf="@+id/B_Nintendo"
+        app:layout_constraintEnd_toStartOf="@+id/B_Nintendo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="funcion_play5"
+        app:layout_constraintTop_toTopOf="@+id/B_Nintendo" />
+
+    <Button
+        android:id="@+id/B_Nintendo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nintendo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/B_Play5"
+        android:onClick="funcion_nintendo"
+        app:layout_constraintTop_toBottomOf="@+id/EDT_unidades" />
+
+    <Button
+        android:id="@+id/B_Volver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_Nintendo"
+        android:onClick="funcion_volver"
+        app:layout_constraintVertical_bias="0.867" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

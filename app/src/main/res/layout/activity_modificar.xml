@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modificar">
+
+    <Button
+        android:id="@+id/B_suma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Tv_unid_modif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:onClick="funcion_sumar"
+        app:layout_constraintVertical_weight="2" />
+
+    <TextView
+        android:id="@+id/Tv_unid_modif"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/B_resta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_suma"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/B_resta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/B_Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_unid_modif"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:onClick="funcion_resta"
+        app:layout_constraintVertical_weight="2" />
+
+    <Button
+        android:id="@+id/B_Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cerrar y guardar "
+        app:layout_constraintBottom_toBottomOf="@+id/B_S_Guardar"
+        app:layout_constraintEnd_toStartOf="@+id/B_S_Guardar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="funcion_guardar"
+        app:layout_constraintTop_toTopOf="@+id/B_S_Guardar" />
+
+    <Button
+        android:id="@+id/B_S_Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="cerrar sin guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/B_Guardar"
+        app:layout_constraintTop_toBottomOf="@+id/B_resta"
+        android:onClick="funcion_no_guardar"
+        app:layout_constraintVertical_bias="0.941" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sony">
+
+    <TextView
+        android:id="@+id/TV_Microsoft"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#78D2DD"
+        android:gravity="center"
+        android:text="Sony"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/TV_texto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#F6C3C3"
+        android:text="Informacion sobre la consola"
+        app:layout_constraintBottom_toTopOf="@+id/B_Cerrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Microsoft"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/B_Cerrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="funcion_cerrar"
+        android:text="Cerrar"
+        app:layout_constraintBottom_toTopOf="@+id/B_Web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/B_Web"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Web"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="funcion_web"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
